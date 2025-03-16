@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "4348d25874c43331",
+    "type": "split",
+    "children": [
+      {
+        "id": "11c27c96c57ef383",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e3d603d6a49a7d7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/hosting-blog-on-codeberg-pages.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hosting-blog-on-codeberg-pages"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "08af06131242652b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3f51c119f2ac218",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cf82fe2c36d493a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "361c5fefa9ac2ad1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6b27279d87e39e40",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0ae01bf56a77c22d",
+    "type": "split",
+    "children": [
+      {
+        "id": "4949498119344fa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc43b4ef00ffa964",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "about/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "c0d359bcdb70761c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "about/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "ada3c291631d963f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2643d12943c997d0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "about/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e3d603d6a49a7d7c",
+  "lastOpenFiles": [
+    "buymeatea/index.md",
+    "_drafts/hosting-blog-on-codeberg-pages.md",
+    "_posts/2025-02-10-docker搭建owncloud和onlyoffice并使用caddy反代，实现在线编辑文档.md",
+    "_posts/2025-01-20-Greetings_from_obsp.de!.md",
+    "about/index.md",
+    "_drafts",
+    "_posts/building-radicale.md",
+    "_posts/rclone-mount-hetzner-storage-box.md"
+  ]
+}
