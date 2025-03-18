@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/hosting-blog-on-codeberg-pages.md",
+                "file": "_posts/2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hosting-blog-on-codeberg-pages"
+              "title": "2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）"
             }
           }
         ]
@@ -170,11 +170,21 @@
   },
   "active": "e3d603d6a49a7d7c",
   "lastOpenFiles": [
-    "buymeatea/index.md",
+    "_posts/2025-02-19-docker自建Bitwarden的社区精简高级版Vaultwarden，并使用Caddy反代.md",
+    "_posts/2025-02-20-2025.2.20更新.md",
+    "_posts/2025-03-12-2025.03.12更新.md",
+    "_posts/2025-03-10-Rclone以WebDAV方式挂载Hetzner_Storage_Box.md",
+    "_posts/2025-03-09-2025.03.09更新.md",
+    "_posts/2025-03-05-CalDAV及CardDAV服务器Radicale_V3部署指南+Caddy_V2一行反代.md",
+    "_posts/hosting-blog-on-codeberg-pages.md",
     "_drafts/hosting-blog-on-codeberg-pages.md",
+    "buymeatea/index.md",
+    "about/index.md",
+    "_posts/obsp-microbin.md",
+    "_posts/2025-02-18-Arch_Linux(GNOME)安装Fcitx_5输入法+中州韵Rime+雾凇拼音.md",
+    "_drafts/obsp-microbin.md",
     "_posts/2025-02-10-docker搭建owncloud和onlyoffice并使用caddy反代，实现在线编辑文档.md",
     "_posts/2025-01-20-Greetings_from_obsp.de!.md",
-    "about/index.md",
     "_drafts",
     "_posts/building-radicale.md",
     "_posts/rclone-mount-hetzner-storage-box.md"

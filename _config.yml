@@ -6,8 +6,8 @@
 title: Observer's Space Mirror
 favicon: https://s21.ax1x.com/2025/02/11/pEn6KsJ.png
 avatar: https://s21.ax1x.com/2025/02/11/pEn6KsJ.png
-subtitle: ''
-description: 'This is a sister website of obsp.de. (Still in beta)'
+subtitle: '宇宙中的观星者'
+description: '开源项目介绍及教程'
 keywords:
 author: Yuki Kamiki
 language: en
@@ -16,7 +16,7 @@ timezone: 'UTC'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://hexo.obsp.de
-#root: 
+#root:
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
