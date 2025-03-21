@@ -23,7 +23,7 @@ menubar:
        url: /sub
      - id: buymeatea
        theme: '#1BCDFC'
-       title: 赞助
+       title: 打赏
        url: /buymeatea
 
 inject:
