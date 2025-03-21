@@ -1,5 +1,6 @@
 {
   "interfaceFontFamily": "SuperPingFangV1",
   "monospaceFontFamily": "SuperSFMonoV1",
-  "textFontFamily": "SuperPingFangV1"
+  "textFontFamily": "SuperPingFangV1",
+  "baseFontSize": 18
 }

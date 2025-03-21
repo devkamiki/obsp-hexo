@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "11c27c96c57ef383",
+        "id": "060f9f9868b1af1c",
         "type": "tabs",
         "children": [
           {
-            "id": "e3d603d6a49a7d7c",
+            "id": "2bafaa521101ba49",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）"
+              "title": "New tab"
             }
           }
         ]
@@ -168,17 +164,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3d603d6a49a7d7c",
+  "active": "2bafaa521101ba49",
   "lastOpenFiles": [
+    "_posts/hosting-blog-on-codeberg-pages.md",
+    "buymeatea/index.md",
+    "_posts/2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）.md",
     "_posts/2025-02-19-docker自建Bitwarden的社区精简高级版Vaultwarden，并使用Caddy反代.md",
     "_posts/2025-02-20-2025.2.20更新.md",
     "_posts/2025-03-12-2025.03.12更新.md",
     "_posts/2025-03-10-Rclone以WebDAV方式挂载Hetzner_Storage_Box.md",
     "_posts/2025-03-09-2025.03.09更新.md",
     "_posts/2025-03-05-CalDAV及CardDAV服务器Radicale_V3部署指南+Caddy_V2一行反代.md",
-    "_posts/hosting-blog-on-codeberg-pages.md",
     "_drafts/hosting-blog-on-codeberg-pages.md",
-    "buymeatea/index.md",
     "about/index.md",
     "_posts/obsp-microbin.md",
     "_posts/2025-02-18-Arch_Linux(GNOME)安装Fcitx_5输入法+中州韵Rime+雾凇拼音.md",
