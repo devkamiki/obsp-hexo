@@ -1,18 +1,18 @@
-image: node:20-alpine
-cache:
-  paths:
-    - node_modules/
+#image: node:20-alpine
+#cache:
+  #paths:
+    #- node_modules/
 
-before_script:
-  - npm install hexo-cli -g
-  - npm install
-  - npm i hexo-theme-stellar #theme
+#before_script:
+ # - npm install hexo-cli -g
+#  - npm install
+#  - npm i hexo-theme-stellar #theme
 
-pages:
-  script:
-    - npm run build
-  artifacts:
-    paths:
-      - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+#pages:
+#  script:
+ #   - npm run build
+ # artifacts:
+  #  paths:
+   #   - public
+  #rules:
+   # - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
