@@ -6,7 +6,7 @@ cache:
 before_script:
   - npm install hexo-cli -g
   - npm install
-#  - npm i hexo-theme-stellar #theme
+  - npm i hexo-theme-stellar #theme
 
 pages:
   script:
