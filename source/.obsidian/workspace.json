@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "buymeatea/index.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -170,8 +170,8 @@
   },
   "active": "2bafaa521101ba49",
   "lastOpenFiles": [
-    "_posts/hosting-blog-on-codeberg-pages.md",
     "buymeatea/index.md",
+    "_posts/hosting-blog-on-codeberg-pages.md",
     "_posts/2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）.md",
     "_posts/2025-02-19-docker自建Bitwarden的社区精简高级版Vaultwarden，并使用Caddy反代.md",
     "_posts/2025-02-20-2025.2.20更新.md",
