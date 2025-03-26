@@ -15,7 +15,7 @@ timezone: 'UTC'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://hexo.obsp.de
+url: https://obsp-hexo-0cbc05.gitlab.io
 #root:
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -103,8 +103,8 @@ theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: 'git'
-  repo: git@codeberg.org:kamiki/obsp.git
-  branch: main
-  message: updates
+#deploy:
+#  type: 'git'
+#  repo: git@codeberg.org:kamiki/obsp.git
+#  branch: main
+#  message: updates
