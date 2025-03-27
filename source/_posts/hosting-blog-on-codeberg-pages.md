@@ -6,6 +6,9 @@ tags:
   - staticsite
   - blog
 date: 2025-03-18 22:16:28
+categories:
+  - 日常
+  - 主机折腾记录
 ---
 
 ## 前言
