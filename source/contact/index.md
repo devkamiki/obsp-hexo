@@ -12,7 +12,7 @@ tags:
 desc: 
 img: 
 ---
-
+站长个人主页：https://kamiki.pages.dev
 
 [Email](mailto:yuki@obsp.de) 发现一个问题？想要占领广告位？单纯想骂站长？给我发邮件，12小时之内回复。如果需要加密，这是我的OpenPGP指纹，你可以在keys.openpgp.org找到对应的公钥：`38FF 0A1F 3A89 A24D EC6F DE71 CB33 4844 E3EF BE9B`。加密的信息需要24小时回复，因为我可能没和私钥在一起。
 [Matrix](https://matrix.to/#/@pinkalligator:matrix.org) 想要聊天？来Matrix，前提是你信任我们双方的服务器和客户端。
