@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "_posts/new-services-vaultwarden-wallos-vikunja.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "new-services-vaultwarden-wallos-vikunja"
             }
           }
         ]
@@ -170,8 +170,12 @@
   },
   "active": "2bafaa521101ba49",
   "lastOpenFiles": [
-    "buymeatea/index.md",
     "_posts/hosting-blog-on-codeberg-pages.md",
+    "_posts/obsp-microbin.md",
+    "_posts/new-services-vaultwarden-wallos-vikunja.md",
+    "contact/index.md",
+    "about/index.md",
+    "buymeatea/index.md",
     "_posts/2025-02-18-Keepass多端同步折腾笔记（Linux+Android+iPadOS）.md",
     "_posts/2025-02-19-docker自建Bitwarden的社区精简高级版Vaultwarden，并使用Caddy反代.md",
     "_posts/2025-02-20-2025.2.20更新.md",
@@ -180,8 +184,6 @@
     "_posts/2025-03-09-2025.03.09更新.md",
     "_posts/2025-03-05-CalDAV及CardDAV服务器Radicale_V3部署指南+Caddy_V2一行反代.md",
     "_drafts/hosting-blog-on-codeberg-pages.md",
-    "about/index.md",
-    "_posts/obsp-microbin.md",
     "_posts/2025-02-18-Arch_Linux(GNOME)安装Fcitx_5输入法+中州韵Rime+雾凇拼音.md",
     "_drafts/obsp-microbin.md",
     "_posts/2025-02-10-docker搭建owncloud和onlyoffice并使用caddy反代，实现在线编辑文档.md",
