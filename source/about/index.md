@@ -7,6 +7,10 @@ title: 关于
 
 本站是 Typecho 博客 https://obsp.de 的 Hexo 镜像站~~,目前仍在开发中，内容更新不及时，历史文章尚未同步~~ 已同步。
 
+站长个人主页：https://kamiki.pages.dev
+
+服务状态监控：https://status.obsp.de/status/1
+
 我们有一个供所有人自由使用的SearXNG实例: https://q.obsp.de 。Observer's Space 不会记录您的搜索历史和ip地址，但是我们希望您不相信我们的保证，做好隐私防护。
 
 以及一个[Microbin](https://microbin.eu/)实例：https://bin.obsp.de 。当您选择Encryption类的权限等级时，您的数据在服务器端是保持加密的，Observer's Space 无法查看您的数据明文。
