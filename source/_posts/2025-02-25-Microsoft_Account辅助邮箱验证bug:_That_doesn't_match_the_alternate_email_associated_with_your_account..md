@@ -18,16 +18,14 @@ img:
 
 
 Bug描述: 格式为xx.abcd@example.org的邮箱是微软账号的辅助邮箱之一。试图验证辅助邮箱地址，输入地址后显示 "That doesn't match the alternate email associated with your account. The correct email starts with "xx".
+
 Bug原因: 前端程序员太弱智。
+
 解决方案: 把第三个字符`.`换成URL编码的`%2E`即可。
 
 类似问题: 
->In my case, I only have two letters as an email name.
-For example, if my alternative email is *** Email address is removed for privacy ***
-Verify your email
-We will send a verification code to ab*****@XYZ.org. To verify that this is your email address, enter it below.
-When I key in *** Email address is removed for privacy ***, it always shows
-That doesn't match the alternate email associated with your account. The correct email starts with "ab".
+
+>In my case, I only have two letters as an email name. For example, if my alternative email is`ab@xyz.org`: Verify your email - We will send a verification code to `ab*****@XYZ.org`. To verify that this is your email address, enter it below. When I key in `ab@xyz.org` , it always shows: That doesn't match the alternate email associated with your account. The correct email starts with "ab".
 
 解决方案: 目前无解。
 

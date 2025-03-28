@@ -7,8 +7,11 @@ categories:
 date: 2025-03-17 12:13:39
 ---
 Observer's Space推出了一个新的公共[Microbin](https://microbin.eu/)实例，欢迎大家使用。
+
 实例地址：https://bin.obsp.de
+
 您可以通过设置有效期、阅读次数限制和权限来保证数据安全。
+
 有关权限的说明：
 ### 公开
 该隐私级别允许所有人查找、查看、修改和删除您的上传。

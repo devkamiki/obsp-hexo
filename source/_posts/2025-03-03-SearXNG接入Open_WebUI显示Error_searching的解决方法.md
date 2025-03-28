@@ -16,11 +16,14 @@ img:
 
 
 可能是由于没开启JSON输出导致的，
+
 在您的`/usr/local/searxng-docker/searxng/settings.yml`加入如下内容：
+
 ```
 search:
   formats:
   - html
   - json
 ```
+
 OpenWebUI的搜索字符串不是%s，也不是空白，是`<query>`，例如使用本站SearXNG实例进行搜索，要在联网搜索处配置的URL是`https://q.obsp.de/search?q=<query>`。

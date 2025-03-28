@@ -21,22 +21,35 @@ img:
 
 
 以下配置适用于GNOME桌面，KDE和Xfce用户请参考其它文章。
-##安装Fcitx 5和中州韵Rime：
+
+## 安装Fcitx 5和中州韵Rime：
+
 Fcitx 5用AUR helper装：
+
 `yay -S fcitx5 fcitx5-rime fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-config-qt`
+
 我一直用sudo yay，发现以sudo运行的时候会提示不建议，直接yay即可。
+
 `nano`一下`/etc/environment`，加入如下内容
+
 ```
 XMODIFIERS=@im=@fcitx
 QT_IM_MODULE=fcitx
 GTK_IM_MODULE=fcitx
 ```
-##安装必要的GNOME组件：
+
+## 安装必要的GNOME组件：
+
 [安装Input Method Panel](https://extensions.gnome.org/extension/261/kimpanel/)
+
 重启一下，打开Fcitx 5配置，把中州韵Rime添加到键盘里面。
-##安装雾凇拼音：
+
+## 安装雾凇拼音：
+
 `yay -S rime-ice-git`
+
 改一下Rime的配置：`nano /.local/share/fcitx5/rime/default.custom.yaml`，写入：
+
 ```
 patch:
   # 仅使用「雾凇拼音」的默认配置，配置此行即可
