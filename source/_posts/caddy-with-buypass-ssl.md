@@ -4,7 +4,7 @@ tags:
   - caddy
   - ssl
   - buypass
-  - certbort
+  - certbot
 categories:
   - 日常
 date: 2025-03-31 17:55:51
@@ -30,7 +30,7 @@ date: 2025-03-31 17:55:51
 }
 ```
 
-- 第二种，放在每个域名的大括号里面，作用于域名： ```
+- 第二种，放在每个域名的大括号里面，作用于域名： 
 ```
 tls hi@example.dev {
     ca https://acme.zerossl.com/v2/DV90 # 换成自定义 CA
