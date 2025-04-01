@@ -8,3 +8,4 @@ _multiconfig.yml
 themes/*/.git/
 .idea
 source/.obsidian
+public
