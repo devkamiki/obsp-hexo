@@ -1,0 +1,807 @@
+
+<!DOCTYPE html><html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
+  
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  
+  <title>去谷歌化路漫漫（一）：Proton和电子邮件 - Observer's Space Mirror</title>
+
+  
+    <meta name="description" content="这篇文章将会很长，去谷歌化的路程是我对所见种种感受改变，对自己十几年互联网生活反思、改进，有失有得的过程。每一期我都会聊一些产品，以及我个人的体验，不客观不真实，仅供参考。今天先讲去谷歌化中的谷歌：Proton。  2024年底，我开始去谷歌化了。  原因和大多数用户的追求隐私&#x2F;支持自由软件不同，我只是想要一个简洁的互联网生活。  希望我的邮件客户端不要再讨好我，从大数据中预测这一封放">
+<meta property="og:type" content="article">
+<meta property="og:title" content="去谷歌化路漫漫（一）：Proton和电子邮件">
+<meta property="og:url" content="https://hexo.obsp.de/2025/02/15/2025-02-14-%E5%8E%BB%E8%B0%B7%E6%AD%8C%E5%8C%96%E8%B7%AF%E6%BC%AB%E6%BC%AB%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9AProton%E5%92%8C%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/index.html">
+<meta property="og:site_name" content="Observer&#39;s Space Mirror">
+<meta property="og:description" content="这篇文章将会很长，去谷歌化的路程是我对所见种种感受改变，对自己十几年互联网生活反思、改进，有失有得的过程。每一期我都会聊一些产品，以及我个人的体验，不客观不真实，仅供参考。今天先讲去谷歌化中的谷歌：Proton。  2024年底，我开始去谷歌化了。  原因和大多数用户的追求隐私&#x2F;支持自由软件不同，我只是想要一个简洁的互联网生活。  希望我的邮件客户端不要再讨好我，从大数据中预测这一封放">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-02-14T17:36:00.000Z">
+<meta property="article:modified_time" content="2025-02-14T17:52:27.000Z">
+<meta property="article:author" content="Yuki Kamiki">
+<meta property="article:tag" content="degoogle">
+<meta property="article:tag" content="proton">
+<meta property="article:tag" content="email">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="degoogle,proton,email">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.29.1">
+
+
+  
+    <link rel="shortcut icon" href="https://s21.ax1x.com/2025/02/11/pEn6KsJ.png">
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css" /><link rel="preconnect" href="https://fonts.bunny.net"><link href="https://fonts.bunny.net/css?family=pt-mono:400" rel="stylesheet" />
+</head>
+<body>
+
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://s21.ax1x.com/2025/02/11/pEn6KsJ.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Observer's Space Mirror</div><div class="sub cap">宇宙中的观星者</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="Search"></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item" title="关于" href="/about" style="color:#1BCDFC"><span>关于</span></a><a class="nav-item" title="友情链接" href="/friends" style="color:#1BCDFC"><span>友情链接</span></a><a class="nav-item" title="联系方式" href="/contact" style="color:#1BCDFC"><span>联系方式</span></a><a class="nav-item" title="订阅" href="/sub" style="color:#1BCDFC"><span>订阅</span></a><a class="nav-item" title="打赏" href="/buymeatea" style="color:#1BCDFC"><span>打赏</span></a></nav>
+</div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/2025/04/01/caddy-with-buypass-ssl/"><span class="title">Caddy 使用 Buypass Go SSL 作为证书提供商</span></a><a class="item title" href="/2025/03/19/hosting-blog-on-codeberg-pages/"><span class="title">在Codeberg Pages上使用Hexo搭建博客</span></a><a class="item title" href="/2025/03/17/obsp-microbin/"><span class="title">本站推出剪贴板服务：Microbin</span></a><a class="item title" href="/2025/03/28/new-services-vaultwarden-wallos-vikunja/"><span class="title">本站推出新的公益服务：Vaultwarden，Wallos，Vikunja</span></a><a class="item title" href="/2025/03/12/2025-03-12-2025.03.12%E6%9B%B4%E6%96%B0/"><span class="title">2025.03.12更新</span></a><a class="item title" href="/2025/03/10/2025-03-10-Rclone%E4%BB%A5WebDAV%E6%96%B9%E5%BC%8F%E6%8C%82%E8%BD%BDHetzner_Storage_Box/"><span class="title">Rclone以WebDAV方式挂载Hetzner Storage Box</span></a><a class="item title" href="/2025/03/10/2025-03-09-2025.03.09%E6%9B%B4%E6%96%B0/"><span class="title">2025.03.09更新</span></a><a class="item title" href="/2025/03/05/2025-03-05-CalDAV%E5%8F%8ACardDAV%E6%9C%8D%E5%8A%A1%E5%99%A8Radicale_V3%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97+Caddy_V2%E4%B8%80%E8%A1%8C%E5%8F%8D%E4%BB%A3/"><span class="title">CalDAV及CardDAV服务器Radicale V3部署指南+Caddy V2一行反代</span></a><a class="item title" href="/2025/02/10/2025-02-09-tabby%E4%BD%BF%E7%94%A8%E6%8F%92%E4%BB%B6cloud_sync_settings%E5%88%A9%E7%94%A8gitlab_gist%E5%90%8C%E6%AD%A5%E8%AE%BE%E7%BD%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"><span class="title">tabby使用插件cloud sync settings利用gitlab gist同步设置遇到的问题</span></a><a class="item title" href="/2025/02/26/microsoft_account_bug/"><span class="title">Microsoft Account辅助邮箱验证bug:That doesn't match the alternate email associated with your account.</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2025-02-14T17:36:00.000Z">2025-02-14</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2025-02-14T17:52:27.000Z">2025-02-14</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>去谷歌化路漫漫（一）：Proton和电子邮件</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p> 这篇文章将会很长，去谷歌化的路程是我对所见种种感受改变，对自己十几年互联网生活反思、改进，有失有得的过程。每一期我都会聊一些产品，以及我个人的体验，不客观不真实，仅供参考。今天先讲去谷歌化中的谷歌：Proton。</p>
+<p> 2024年底，我开始去谷歌化了。</p>
+<p> 原因和大多数用户的追求隐私&#x2F;支持自由软件不同，我只是想要一个简洁的互联网生活。</p>
+<p> 希望我的邮件客户端不要再讨好我，从大数据中预测这一封放进社交媒体还是收件箱; 希望每次登录账户时输入密码和2步验证代码就能成功登录，不必拿出另一部设备进行一番操作; 希望在使用YouTube&#x2F;B站时，我能选择自己想要的客户端，而不是把一切都寄托在谷歌&#x2F;叔叔恩赐一般的优化; 希望我的密码可以跟着我的人走，而不是被绑在Chrome里; 希望讨厌的广告，不要总是霸占搜索引擎的前排; 希望我的账户信息，不会因为我少加了一个密保邮箱和手机号，就面临着随时把自己锁在外面的风险……</p>
+<p> 当我刷着Reddit，r&#x2F;deGoogling这个版块出现在眼前，我一下子就明白了它的意思: 是的，这就是我一直想要的!</p>
+<p>  ……吗?</p>
+<p> 似乎不是。</p>
+<p> 论坛里的大家，兴致勃勃地讨论着谷歌套件的替代品，让我感到很受鼓舞。在欧美地区去谷歌化堪称“逆天而行”，离开了谷歌的便利工具，许多人甚至感到一夜变成了原始人。作为手足无措的用户中的一员，我开始从101看起。</p>
+<p> 去谷第一剑，先斩gmail。而热度最高的gmail，以至于谷歌套件的替代品，就是Proton。</p>
+<p> Protonmail，这是一个我在2020年就听说的名字。“端到端加密”“尊重隐私”的邮件，它几乎凭借一己之力，将这原本小众的需求成功带进了大众的视野。从前的Proton只有邮件服务，而如今却大有要做成隐私友好的网络服务提供商中的Google的意思：VPN，密码管理器，邮件，云盘，日历，还有24年底面向Visionary用户（一种类似于给Proton进行了风投的顶级订阅用户，这些用户不仅能获得所有产品的最高级权益，还能保证享受以后的所有升级。当然订阅费很贵，并且根据reddit用户回忆，这种订阅只在Proton初创和24年黑五后开始强推Wallet的时间段开放过）进行了加密货币钱包的内测。</p>
+<p> 然而，这个提供商却让我感到比Google还令人无所适从。</p>
+<p> 打开<a target="_blank" rel="noopener" href="https://proton.me/">它的网站</a>，紫与蓝的配色十分醒目，居中衬线体的标语是“A better internet starts with privacy and freedom（更好的互联网从隐私和自由开始）”，并在首页展示了Proton的各项业务与最新的促销信息。不得不说，Proton的UI进步不小，从2020年初以一把锁为Logo，灰扑扑的朴素模样，到如今大方优雅、细致入微的紫色系平面设计，像是在向互联网昭示这个新兴的企业已经完成了从丑小鸭到白天鹅的蜕变。</p>
+<p> 作为一个穷鬼，我首先做的就是点开定价一项项察看。在2024年11月，Proton各项服务的定价（根据我的回忆，此处我会找到互联网档案的资料补上）是这样的：各项服务的基础功能免费，各自的会员定价不同。邮件服务Mail Plus是4.99USD&#x2F;mo，年付八折；第二大业务VPN的Plus是9.99USD&#x2F;mo，两年付五折；密码管理器Pass Plus是2.99USD&#x2F;mo，年付价格为1.99USD&#x2F;mo（Pass与邮箱别名服务SimpleLogin两项业务的会员在早些时候是分开的，分别定价2.99USD&#x2F;mo。24年底完成了Pass Plus和SimpleLogin Premium的合并，合并后提价至3.99USD&#x2F;mo，年付七五折）；云盘Drive 200GB的空间需要收取4.99USD&#x2F;mo，年付八折。</p>
+<p> 这定价不能算贵，但也不算便宜。在欣赏完这些对隐私大有助益的服务之后，我不禁汗流浃背：这样子一项一项加起来，一个月的花费接近30刀。当然，实际上不需要这么多，因为——</p>
+<p> Proton将每一项服务的单价抬高，最终的目的就是吸引用户把目光投向中间高亮的、用紫色框框围起来的选项——Proton Unlimited，月付12.99USD——当然，这不重要——年付9.99USD&#x2F;mo。此时，刚刚在心中算了一笔账的用户就会发现：哎，这个划算！</p>
+<p> 不仅如此，Proton在购买页面从未告知客户：当用户购买了一项服务的Plus之后，便不能在同一个Proton账户上叠加其他服务的Plus。也就是说，“我只买Mail Plus和Pass Plus&#x2F;SimpleLogin就够了”的想法是根本不可能实现的，在一项服务的Plus之上，只有直接购买Proton Unlimited的选项。而且，由于月付与年付的价格差异，Proton吸引客户更多地购买Unlimited的年付套餐。</p>
+<p> 然而，根据互联网上用户的反馈和我个人的经验来看，这种捆绑定价的策略让顾客并不满意：不少人抱怨Proton涉足云盘、密码管理器的领域，而首推的邮箱服务和VPN却并没有进行多少优化，多而不精。</p>
+<p> 我也忍不住想，如果去谷歌化的过程就是从一个公司跳到另一个公司，相信它对安全和隐私的承诺，并且每个月掏出9.99刀给它，相信这样就能买到安心，那么为什么不直接相信谷歌呢？</p>
+<p> 当然，我们有证据说明谷歌对用户的隐私不够尊重，而Proton做得远比谷歌好；但是，这样足够吗？</p>
+<p> 就拿邮箱来说，Proton为了保证E2EE（端到端加密，只有收信人和发信人能够解密信息），取消了对邮件行业标准IMAP&#x2F;SMTP的支持，而后又顶不住客户的需求和自己的客户端实在太难用的事实，重新在桌面端加入了Bridge。这种打折腿给根拐的行为两面不讨好，对于真正需要隐私的客户而言，他们大可以去选择OpenPGP加密和Signal聊天软件这些更加成熟且广为接受的产品，而对于普通的客户而言，他们只是想用熟悉方便的客户端收发邮件，都要为此付出一笔月费，而且在移动端，Proton至今没有对第三方邮件客户端的支持。</p>
+<p> 至于Proton此举对E2EE的实现效果，我只能说：<strong>如有</strong>。</p>
+<p> 如果与Proton用户通信的对象位于另一个邮件服务器，那通信对象的邮件提供商一样能够阅读他们之间通信的内容。为了保障同外部联系人的通信也是E2EE，需要提前设置一个密码，对方收到邮件后，需要输入密码才能阅读。问题在于，OpenPGP就在那里，既有Thunderbird和eM Client的原生支持，又有Mailvelope这样的浏览器插件，在电子邮件中实现加密通信早就不是什么新鲜事，Proton此举无异于画蛇添足。Proton的一个主要营销点是总部位于瑞士，然而“瑞士的隐私法律”管辖住的也只有Proton保留与分享你的信息的权力。正如我刚才所说，你的邮件来自互联网各处，发向互联网各处。即使谷歌，或者说以GAFAM为首的数据矿工不再能够收集你收件箱中的信息，但你还是把真实的邮箱地址暴露在各种零售商的mailing list中，那么收集这些公开的信息一样可以拼凑出你的用户画像。</p>
+<p> 当然，我也有不少Proton的好话要说：除了云盘实在没得夸，邮件也不符合我心中的评价标准，Pass和VPN我还是颇为欣赏的。Pass和SimpleLogin别名互通、会员合并之后，已经成为了我心目中Bitwarden之下第一密码管理器（KeePass论外，从灵活性&#x2F;自建成本来说它应该是断层第一，但是KeePass的好用程度取决于客户端，用户体验上限高、下限低，参差不齐），开源的客户端、方便的导入与导出、独步天下的别名生成与管理，基础功能如附件、分类模板、密码生成和密码口令生成、2FA代码储存和填写，除了无法自建和云端优先这两个小小缺憾，可称得上是该有的都有，后来居上，大有压1Password一头之势。VPN功能丰富，体验稳定，直连也不会捶胸顿足，IP比较脏，但也是在所难免。</p>
+<p> 当时的我只是想找一个适合穷鬼、可以用IMAP&#x2F;SMTP并且看起来不像随时要跑路的提供商，当然，如果不是大公司的产品，我会更乐意。找来找去，目光锁定了mailbox.org和posteo.de，这两家各有优劣，起价都便宜，前者的优势是有域名邮箱支持，后者定价是PAYG的模式，并且用户忘记按时付款只会暂停发信功能，不会暂停收信功能（我说这个不是教唆网友去薅羊毛，只是说假如我被车撞了在医院里躺了半年，不会因为错过缴费而失去这半年里发到我的地址的重要邮件）。后来用了一会，两家我都不太满意，mailbox的网页从我这里加载实在是太慢了，符合对德国网络的刻板印象；posteo是因为最后我还是更想用域名邮箱一点，但是他们家出于隐私保护不希望保存用户的域名信息。</p>
+<p> 之所以最后还是用上了域名邮箱，是因为频繁地注册各类账号的我很需要一个别名服务，买不起SimpleLogin和Addy.io，琢磨自建的时候突然发现：不对啊，自建肯定需要一个域名，这整个域名都是我的，我还在这里装模作样地enable和disable做什么，直接开个catch-all，遇到垃圾就block，岂不美哉！而且，未来SimpleLogin或其它别名服务的域名可能为他人注册，或者挪作他用，但是只要我一直续费域名，域名就一直属于我，便宜又可靠。</p>
+<p> 所以我最后靠上的邮箱解决方案是几个主要域名不开catch-all，几个次要域名开catch-all接收垃圾邮件（不发送的话直接用Cloudflare路由），买的是MXRoute家的不按邮箱个数计费只按容量计费的邮件托管服务，一年下来的域名钱和邮箱钱加起来只要15刀，花五分之一的钱享受比Mail Plus+SimpleLogin更自由的服务（这个数字还能腰斩，明年要放生一个.cc域名）。</p>
+<p> 当然这个时候就有人要问了，有什么坏处吗？如有吧，比如MXRoute的老板不在瑞士，我的域名registrar也不在瑞士，Cloudflare也不在瑞士，但是我是穷鬼，穷鬼是不会追求这个的，反正本站也不在瑞士（本站的主机托管在风景不知道怎么样反正站长没去过的德国纽伦堡）……</p>
+<p> 说完了服务端，该说客户端了。我没有试过所有风评“值得一试”的客户端，比如Claw Mail，我的体验很浅，仅仅是从Fedora换到Arch的时候试了一下，后来发现还是Thunderbird比较得劲。Thunderbird是一个成熟、面面俱到的开源客户端，赖舒服了就不想走，最大的特色大概是自动发现收发信服务器，安卓端的FairEmail用的也是tb的检索功能。不习惯Thunderbird，想要更简洁一点的Linux桌面用户可以尝试一下Evolution。FairEmail是我心目中的安卓最佳，尽管UI褒贬不一，但是功能肯定是最多的，对于默认不加载外部图像的邮件排版得非常好，一目了然，其他客户端往往都需要加载出图片才能看出邮件的内容。K-9无功无过，被Thunderbird合并后表现更加亮眼。eM Client，还没有试过。最近买了NameCrane的三年套餐，SmarterMail为每个顶级域送3个license，过段时间会试试看。</p>
+<p> 至于各大邮件厂商自己的应用，网易邮箱大师的桌面端和移动端都一般般，校园邮薅的永久vip去广告版尚可一用，但是Thunderbird和FairEmail珠玉在前，只能说是食之无用，弃之可惜。QQ和foxmail也是一样。Tuta的邮件客户端倒是没有广告，不过搜索功能很垃圾，也不能导入&#x2F;导出。</p>
+<p> 未完待续，本期水完邮箱，下期水一下密码管理软件吧。</p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>License</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2025/02/15/2025-02-14-%E6%9C%AC%E7%AB%99SearXNG%E5%AE%9E%E4%BE%8B%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98/">本站SearXNG实例存在的问题</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2025/02/14/2025-02-13-2025.2.13_%E6%9B%B4%E6%96%B0/">2025.2.13 更新</a></div></section></div>
+
+
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body giscus'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" src="https://giscus.app/client.js" data-repo="f-engg/obsp" data-repo-id="R_kgDOOJXv_g" data-category="Announcements" data-category-id="DIC_kwDOOJXv_s4CoGLJ" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Yuki Kamiki</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+</aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `Just`,
+      min: `minutes ago`,
+      hour: `hours ago`,
+      day: `days ago`,
+    },
+    root : `/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js`,
+    marked: `https://cdn.jsdelivr.net/npm/marked@13.0.1/lib/marked.umd.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function (response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function (data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function (error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });
+</script>
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+
+<!-- required -->
+<script src="/js/main.js?v=1.29.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `Switched to Light Mode`,
+      dark: `Switched to Dark Mode`,
+      auto: `Switched to Auto Mode`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #giscus');
+  util.viewportLazyload(el, load_discus, false);
+
+  function load_discus() {
+    if (!el) return;
+    try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      const script = document.createElement('script');
+      script.async = true;
+      for (const key of Object.keys(el.attributes)) {
+        const attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+  }
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
