@@ -4,8 +4,8 @@
 
 # Site
 title: Observer's Space Mirror
-favicon: https://s21.ax1x.com/2025/02/11/pEn6KsJ.png
-avatar: https://s21.ax1x.com/2025/02/11/pEn6KsJ.png
+favicon: /images/ringed-planet.svg
+avatar: /images/ringed-planet.svg
 subtitle: '宇宙中的观星者'
 description: '开源项目介绍及教程'
 keywords:
