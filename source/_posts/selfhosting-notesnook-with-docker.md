@@ -1,10 +1,10 @@
 ---
-title: 使用docker自建e2ee开源笔记软件Notesnook服务器
 tags:
   - docker
   - e2ee
   - OSS
   - Notesnook
+title: 使用docker自建e2ee开源笔记软件Notesnook服务器
 categories:
   - 主机折腾记录
 date: 2025-04-03 11:57:01
