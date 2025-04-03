@@ -1,9 +1,8 @@
 ---
 date: 2025-03-15 11:00:14
 menu_id: about
-title: 关于
+title: 欢迎来到 Observer's Space！Welcome to Observer's Space! Observer's Space へようこそ！ Willkommen bei Observer's Space! Welkom bij Observer's Space! Bienvenue sur Observer's Space!
 ---
-# 欢迎来到 Observer's Space！Welcome to Observer's Space! Observer's Space へようこそ！ Willkommen bei Observer's Space! Welkom bij Observer's Space! Bienvenue sur Observer's Space!
 
 本站是 Typecho 博客 https://obsp.de 的 Hexo 镜像站~~,目前仍在开发中，内容更新不及时，历史文章尚未同步~~ 已同步。
 
