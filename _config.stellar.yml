@@ -39,8 +39,8 @@ inject:
     - <link href="https://fonts.bunny.net/css?family=pt-mono:400" rel="stylesheet" />
 style:
   font-family:
-    logo: 'Bree Serif', 'LXGW WenKai Screen'
-    body: 'Bree Serif', 'LXGW WenKai Screen'
+    logo: "'Bree Serif', 'LXGW WenKai Screen'"
+    body: "'Bree Serif', 'LXGW WenKai Screen'"
     code: 'PT Mono'
     codeblock: 'PT Mono'
 comments:
