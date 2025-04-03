@@ -39,7 +39,11 @@ inject:
     - <link href="https://fonts.bunny.net/css?family=pt-mono:400" rel="stylesheet" />
     - <link rel="preconnect" href="https://fontsapi.zeoseven.com" crossorigin />
     - <link rel="stylesheet" href="https://fontsapi.zeoseven.com/2/main/result.css" onerror="this.href='https://fontsapi-storage.zeoseven.com/2/main/result.css'" />
-  index_leftbar:
+  script:
+    - |
+      <div style="position:fixed; bottom:0; right:0; width:300px; height:200px; z-index: 9999;">
+              <iframe src="https://support.nodeseek.com/page/promotion?id={your_id}" width="100%" height="100%" frameborder="0"></iframe>
+              </div>
 style:
   font-family:
     logo: "'Bree Serif', 'LXGW Zhenkai'"

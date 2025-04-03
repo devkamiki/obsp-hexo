@@ -286,7 +286,7 @@ volumes:
 
 我们需要进行个性化设置的是 `.env` 文件，官方同样提供了一个示例：
 
-```yaml
+```bash
 INSTANCE_NAME=self-hosted-notesnook-instance 
 # 改成你的实例名称
 
@@ -465,7 +465,7 @@ server {
 
 Caddy 的配置参考这里：https://github.com/streetwriters/notesnook-sync-server/issues/20#issuecomment-2763248500
 
-```caddyfile
+```nginx
 notes.example.io {
         reverse_proxy localhost:5264
 }
