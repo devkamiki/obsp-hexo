@@ -33,14 +33,17 @@ menubar:
 
 inject:
   head:
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css" />
+   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css" />
     - <link rel="preconnect" href="https://fonts.bunny.net">
     - <link href="https://fonts.bunny.net/css?family=bree-serif:400" rel="stylesheet" />
     - <link href="https://fonts.bunny.net/css?family=pt-mono:400" rel="stylesheet" />
+    - <link rel="preconnect" href="https://fontsapi.zeoseven.com" crossorigin />
+    - <link rel="stylesheet" href="https://fontsapi.zeoseven.com/2/main/result.css" onerror="this.href='https://fontsapi-storage.zeoseven.com/2/main/result.css'" />
+  index_leftbar:
 style:
   font-family:
-    logo: "'Bree Serif', 'LXGW WenKai Screen'"
-    body: "'Bree Serif', 'LXGW WenKai Screen'"
+    logo: "'Bree Serif', 'LXGW Zhenkai'"
+    body: "'Bree Serif', 'LXGW Zhenkai'"
     code: 'PT Mono'
     codeblock: 'PT Mono'
 comments:
