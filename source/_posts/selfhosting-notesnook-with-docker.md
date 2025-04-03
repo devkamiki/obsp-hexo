@@ -36,7 +36,7 @@ date: 2025-04-03 11:57:01
 
 大部分内容我们都是不需要修改的：
 
-```
+```yaml
 x-server-discovery: &server-discovery
   NOTESNOOK_SERVER_PORT: 5264
   NOTESNOOK_SERVER_HOST: notesnook-server
@@ -286,7 +286,7 @@ volumes:
 
 我们需要进行个性化设置的是 `.env` 文件，官方同样提供了一个示例：
 
-```
+```yaml
 INSTANCE_NAME=self-hosted-notesnook-instance 
 # 改成你的实例名称
 
@@ -359,7 +359,7 @@ MINIO_ROOT_PASSWORD=
 
 Nginx 和 Certbot 的配置参考这里：https://github.com/streetwriters/notesnook-sync-server/issues/20#issuecomment-2603896363
 
-```
+```nginx
 server {
     listen 80;
     server_name auth.domain.com;
@@ -465,7 +465,7 @@ server {
 
 Caddy 的配置参考这里：https://github.com/streetwriters/notesnook-sync-server/issues/20#issuecomment-2763248500
 
-```
+```caddyfile
 notes.example.io {
         reverse_proxy localhost:5264
 }

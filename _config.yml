@@ -108,3 +108,9 @@ theme: stellar
 #  repo: git@codeberg.org:kamiki/obsp.git
 #  branch: main
 #  message: updates
+
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  theme: 'tomorrow'
