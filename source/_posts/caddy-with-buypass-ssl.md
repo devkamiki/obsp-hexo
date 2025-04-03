@@ -14,13 +14,13 @@ date: 2025-03-31 17:55:51
 
 大家好啊，今天教大家一个脱裤子放屁的 Caddy 小技巧。
 
-由 Let‘s Encrypt 获取的 SSL 证书一般有效期为 90 天。虽然可以采用 Certbot 和 acme.sh  一类的脚本，或者交给 Caddy 自动续期，但可能还是有些小伙伴想要获取有效期更长的免费证书。
+由 Let's Encrypt 获取的 SSL 证书一般有效期为 90 天。虽然可以采用 Certbot 和 acme.sh  一类的脚本，或者交给 Caddy 自动续期，但可能还是有些小伙伴想要获取有效期更长的免费证书。
 
 [Buypass Go SSL/TLS](https://www.buypass.com/products/tls-ssl-certificates/go-ssl) 是一家挪威证书签发商的产品，基于 ACME ，证书的有效期为 180 天。那么，如何在 Caddy 中使用它替换默认的 Let's Encrypt 呢？
 
 ## 自定义兼容 ACME 的 CA 的通用语法
 
-在没有特别指明的情况下，Caddy 通常会使用 Let‘s Encrypt 或者 ZeroSSL 来作为 Certificate Authority。你也可以自定义 CA，这里有两种语法，可用于兼容 ACME 的签发者：
+在没有特别指明的情况下，Caddy 通常会使用 Let's Encrypt 或者 ZeroSSL 来作为 Certificate Authority。你也可以自定义 CA，这里有两种语法，可用于兼容 ACME 的签发者：
 
 - 第一种，放在 `Caddyfile` 开头，作用于全局：
 ```
@@ -39,7 +39,7 @@ tls hi@example.dev {
 
 很可惜的是，经过我的尝试，这两种语法下 Buypass Go SSL 都无法获取到证书。大概是因为 Buypass 在某次更新后添加了 ARI 支持，导致了 Caddy 的 `panic:certificate worker: runtime error: invalid memory address`。
 
-解决方法有两个：一是使用 Certbot 进行注册，再手动设置 Caddy 读取获得的证书；二是使用 `acmez` 
+解决方法有两个：一是使用 Certbot 进行注册，再手动设置 Caddy 读取获得的证书；二是使用最新的 `acmez`  仓库和 `xcaddy` 自行构建能够获取 Buypass Go SSL 证书的 Caddy 。
 
 ## 方法一：使用 Certbot 手动获取证书（不推荐）
 
@@ -76,7 +76,7 @@ root@acme:~# chmod 644 /etc/letsencrypt/archive/example.org/*.pem
 
 最后在 Caddyfile 配置 `tls /etc/letsencrypt/live/example.org/fullchain.pem /etc/letsencrypt/live/example.org/privkey.pem` 即可。
 
-当然，只是做实验而已，不推荐所有人进行以上操作。同时使用 Caddy 和 Certbot 的行为纯粹是吃力不讨好，Caddy 默认会升级成 https ，并对证书进行自动续期，所以你几乎感受不到证书有效期的短暂和续期的麻烦。
+当然，只是做实验而已，不推荐任何人进行以上操作。同时使用 Caddy 和 Certbot 的行为纯粹是吃力不讨好，Caddy 默认会升级成 https ，并对证书进行自动续期，所以你几乎感受不到证书有效期的短暂和续期的麻烦。
 
 ## 方法二：使用 xcaddy  构建包含最新 acmez 模块的 Caddy
 
