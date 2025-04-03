@@ -109,8 +109,3 @@ theme: stellar
 #  branch: main
 #  message: updates
 
-prismjs:
-  enable: true
-  preprocess: true
-  line_number: true
-  theme: 'tomorrow'
