@@ -23,7 +23,7 @@ date: 2025-03-31 17:55:51
 在没有特别指明的情况下，Caddy 通常会使用 Let's Encrypt 或者 ZeroSSL 来作为 Certificate Authority。你也可以自定义 CA，这里有两种语法，可用于兼容 ACME 的签发者：
 
 - 第一种，放在 `Caddyfile` 开头，作用于全局：
-```
+```nginx
 {
 	acme_ca https://acme.zerossl.com/v2/DV90 # 换成自定义 CA
 	email hi@example.dev
@@ -31,7 +31,7 @@ date: 2025-03-31 17:55:51
 ```
 
 - 第二种，放在每个域名的大括号里面，作用于域名： 
-```
+```nginx
 tls hi@example.dev {
     ca https://acme.zerossl.com/v2/DV90 # 换成自定义 CA
     }
@@ -47,7 +47,7 @@ tls hi@example.dev {
 
 安装完成之后，运行如下命令：
 
-```
+```bash
 root@acme:~# certbot register -m 'YOUR_EMAIL' --agree-tos --server 'https://api.buypass.com/acme/directory'
 ```
 
@@ -55,19 +55,19 @@ root@acme:~# certbot register -m 'YOUR_EMAIL' --agree-tos --server 'https://api.
 
 如果你不希望你的 web server （ Nginx Apache 都可以，但不是 Caddy ！）暂时停机的话，就选用 `webroot` 方式完成 ACME Challenge ，需要运行的命令是：
 
-```
+```bash
 root@acme:~# certbot certonly --webroot -w /var/www/example.com/public_html/ -d example.com -d www.example.com --server 'https://api.buypass.com/acme/directory'
 ```
 
 如果你用的是 Caddy ，由于 Caddy 默认的 https 重定向策略，导致 80 端口的验证几乎成为了不可能做到的事（不要说可以关掉 tls ，关掉 tls 做完验证之后就要重新开启 tls 读取获得的证书，下次续期的时候就会失败）。那就选用 `standalone` ：
 
-```
+```bash
 root@acme:~# certonly --standalone --email 'xxx@example.org' -d 'example.org' --server 'https://api.buypass.com/acme/directory'
 ```
 
 然后给 Caddy 读取证书的权限：
 
-```
+```bash
 root@acme:~# chmod 755 /etc/letsencrypt/live/    
 root@acme:~# chmod 755 /etc/letsencrypt/archive/
 root@acme:~# chmod 644 /etc/letsencrypt/live/example.org/*.pem
@@ -86,14 +86,15 @@ root@acme:~# chmod 644 /etc/letsencrypt/archive/example.org/*.pem
 
 然后，我们需要安装 xcaddy。
 
-```
+```bash
 root@acme:~# go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
+root@acme:~# export PATH=$PATH:~/go/bin
 root@acme:~# xcaddy build --with github.com/mholt/acmez/v3@v3.1.1
 ```
 
 最后，用 xcaddy 构建的新可执行文件替换掉原来的 Caddy 可执行文件。这一步的操作与 Caddy 的运行方式有关，此处仅展示 `systemd` 服务的替换方法。
 
-```
+```bash
 root@acme:~# systemctl stop caddy
 root@acme:~# cp /usr/bin/caddy /usr/bin/caddy.bak
 root@acme:~# cp ./caddy /usr/bin/caddy
@@ -104,7 +105,7 @@ root@acme:~# systemctl start caddy
 
 此时再在 `Caddyfile` 中使用语法：
 
-```
+```nginx
 {
 	acme_ca https://api.buypass.com/acme/directory
 	email hi@example.dev
