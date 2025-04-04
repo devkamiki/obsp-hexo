@@ -41,14 +41,6 @@ inject:
     - <link rel="stylesheet" href="https://fontsapi.zeoseven.com/2/main/result.css" onerror="this.href='https://fontsapi-storage.zeoseven.com/2/main/result.css'" />
   script:
     - |
-      <style>
-        @media (max-width: 768px) {
-          #float-iframe {
-            width: 200px !important;
-            height: 150px !important;
-          }
-        }
-      </style>
       <div id="float-iframe" style="position: fixed; right: -320px; bottom: 0px; width: auto; height: auto; transition: right 0.5s ease; background: white; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.2); overflow: hidden;">
         <button onclick="this.parentNode.style.right='-320px'" style="position: absolute; top: 5px; right: 5px; background: #ff4444; color: white; border: none; width: 20px; height: 20px; border-radius: 50%; cursor: pointer;">×</button>
         <iframe 
