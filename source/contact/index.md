@@ -22,6 +22,6 @@ img:
 
 [Email](mailto:yuki@obsp.de) and response should be within 12 hours. If you want encryption, this is my OpenPGP fingerprint and you should be able to find my public key on keys.openpgp.org:`38FF 0A1F 3A89 A24D EC6F DE71 CB33 4844 E3EF BE9B`. Kindly note that there may be circumstances that I am not with my laptop or telephone and just being too lazy to de-crypt your email, therefore it may take 24 hours before I reply.
 
-[Matrix](https://matrix.to/#/@yu:tchncs.de) if you would like to chat instead of writing letters. If you trust your matrix home server, your client provider, my client provider (Fluffychat) and my home server (matrix.org), please send me a message. Otherwise, please do not do so.
+[Matrix](https://matrix.to/#/@yu:tchncs.de) if you would like to chat instead of writing letters. If you trust your matrix home server, your client provider, my client provider (Fluffychat & Element) and my home server (tchncs.de), please send me a message. Otherwise, please do not do so.
 
 [Fediverse](https://stelpolva.moe/@p), this is where I do shit-posting. **The maintainer of this Sharkey instance is amazing, kudos.**
