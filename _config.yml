@@ -109,3 +109,6 @@ theme: stellar
 #  branch: main
 #  message: updates
 
+feed:
+  type: atom
+  path: atom.xml
