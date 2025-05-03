@@ -57,7 +57,7 @@ Manjaro 作为 Arch 衍生物中的日用之王，带来的负面体验很少，
 
 Rime 在 KDE + X11 下的配置应该是这样的，在设置-虚拟键盘中选择 fcitx5，输入法中选择中州韵，在 `/etc/environment` 键入：
 
-```
+```shell
 XMODIFIERS=@im=fcitx  
 INPUT_METHOD=fcitx  
 SDL_IM_MODULE=fcitx  
