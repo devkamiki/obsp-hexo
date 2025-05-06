@@ -21,7 +21,7 @@ moto 自带的系统不太好用，所以就要找个合适的 rom。不幸的�
 
 Evolution X 这个系统的主要特点是“让所有手机都能获得 pixel 一样的体验”，尽可能在其他厂商的产品上还原 PixelOS 的功能。在提供各种个性化选项的同时，还提供对谷歌应用伪装成 Pixel 8 Pro 和对谷歌相册伪装成 Pixel XL（解锁无限云端备份相片）的功能。但是由于没吃过猪肉，我也不知道到底多像 Pixel，再加上我本身是一个 degoogler，深入地使用g系软件只是为了狠狠地批判它，所以我对这个系统的评价难免有失偏颇。如果你是一个重视隐私/有 FOSS 情结的人，不要刷这个 rom，买个 pixel 刷 GrapheneOS 或者 LineageOS。
 
-[![Evolution X的介绍](https://s21.ax1x.com/2024/11/19/pAWZvng.png "Heading: About Evolution X, text: Evolution X aims to provide users with a Pixel-like feel at first glance, with additional features at their disposal. Above a button: Get Android 14 for your device now. Button: Download.")](https://imgse.com/i/pAWZvng)
+![ "Heading: About Evolution X, text: Evolution X aims to provide users with a Pixel-like feel at first glance, with additional features at their disposal. Above a button: Get Android 14 for your device now. Button: Download."](https://s21.ax1x.com/2024/11/19/pAWZvng.png)
 # 解 bootloader
 ### 前置条件
 
