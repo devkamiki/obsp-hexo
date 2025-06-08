@@ -15,7 +15,7 @@ timezone: 'UTC'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://hexo.obsp.de
+url: https://obsp.de
 #root:
 permalink: p/:title/
 permalink_defaults:
