@@ -14,4 +14,4 @@ img:
 ---
 
 
-{% link https://mailer.su 邮件人 desc:true %}
+{% friends mailer %}
