@@ -26,4 +26,4 @@ Wallos: https://wallos.obsp.de
 
 如果你有任何问题需要联系站长，请参考联系方式页面。
 
-~~本站位于 Codeberg Pages~~ 站长太喜欢重装系统了，为保证数据的稳定，已搬到可以CI/CD的GitLab Pages，字体使用了 [JSDELIVR](https://www.jsdelivr.com/) 和 [Bunny Fonts](https://fonts.bunny.net) 的服务。
+本站使用 [Netlify](https://netlify.com) 部署，字体使用了 [JSDELIVR](https://www.jsdelivr.com/) 和 [Bunny Fonts](https://fonts.bunny.net) 的服务。

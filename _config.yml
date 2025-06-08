@@ -6,8 +6,8 @@
 title: Observer's Space
 favicon: /images/ringed-planet.svg
 avatar: /images/ringed-planet.svg
-subtitle: '宇宙中的观星者'
-description: '开源项目介绍及教程'
+subtitle: '宇宙中的观星者 - Stargazer in the Universe'
+description: '开源项目介绍及教程 - Open Source Projects Intro and Tutorial'
 keywords:
 author: Yuki Kamiki
 language: en
@@ -17,7 +17,7 @@ timezone: 'UTC'
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://hexo.obsp.de
 #root:
-permalink: :year/:month/:day/:title/
+permalink: p/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
