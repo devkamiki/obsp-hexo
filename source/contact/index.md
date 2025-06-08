@@ -12,7 +12,6 @@ tags:
 desc: 
 img: 
 ---
-站长个人主页：https://kamiki.pages.dev
 
 [Email](mailto:kamiki@disroot.org) 发现一个问题？想要占领广告位？单纯想骂站长？给我发邮件，12小时之内回复。
 

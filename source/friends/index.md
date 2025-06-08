@@ -14,4 +14,4 @@ img:
 ---
 
 
-♥️邮件人 https://mailer.su
+{% link https://mailer.su 邮件人 desc:true %}

@@ -4,26 +4,30 @@ menu_id: about
 title: 欢迎来到 Observer's Space！Welcome to Observer's Space! Observer's Space へようこそ！ Willkommen bei Observer's Space! Welkom bij Observer's Space! Bienvenue sur Observer's Space!
 ---
 
-本站是 Typecho 博客 https://obsp.de 的 Hexo 镜像站~~,目前仍在开发中，内容更新不及时，历史文章尚未同步~~ 已同步。
+本站是一个介绍开源项目及其自建指南的新手向技术型博客，站长是神木友希。
+This website serves as an open source projects' intro and tutorial for noobs, the maintainer of which is Yuki Kamiki.
 
-站长个人主页：https://kamiki.pages.dev
+站长个人主页 / Personal Homepage of maintainer：
+{% link https://kamiki.pages.dev Homepage desc:true%}
 
-服务状态监控：https://status.obsp.de/status/1
+服务状态监控 / Status：
+{% link https://status.obsp.de/status/1 Uptime-Kuma desc:true %}
 
-我们有一个供所有人自由使用的SearXNG实例: https://q.obsp.de 。Observer's Space 不会记录您的搜索历史和ip地址，但是我们希望您不相信我们的保证，做好隐私防护。
-
-以及一个[Microbin](https://microbin.eu/)实例：https://bin.obsp.de 。当您选择Encryption类的权限等级时，您的数据在服务器端是保持加密的，Observer's Space 无法查看您的数据明文。
-
-Vaultwarden: https://vw.obsp.de
-
-Vikunja: https://vikunja.obsp.de
-
-Wallos: https://wallos.obsp.de
+本站提供的开源项目自托管实例 / Instances of open source projects hosted on Observer's Space:
+{% link https://q.obsp.de  SearXNG desc:true %}
+{% link https://bin.obsp.de Microbin desc:true %}
+{% link https://vw.obsp.de Vaultwarden desc:true %}
+{% link https://vikunja.obsp.de Vikunja desc:true %}
+{% link https://wallos.obsp.de Wallos desc:true %}
 
 以上服务均开放注册，请合理利用资源，严禁滥用！
+Services above are all open to public for registration. Please keep fair use!
 
 希望你在这里玩得开心！
+Hope you have a good time here!
 
 如果你有任何问题需要联系站长，请参考联系方式页面。
+If you have any problems, feel free to refer to Contact.
 
 本站使用 [Netlify](https://netlify.com) 部署，字体使用了 [JSDELIVR](https://www.jsdelivr.com/) 和 [Bunny Fonts](https://fonts.bunny.net) 的服务。
+Deployed on [Netlify](https://netlify.com), web fonts distributed with [JSDELIVR](https://www.jsdelivr.com/) & [Bunny Fonts](https://fonts.bunny.net).
