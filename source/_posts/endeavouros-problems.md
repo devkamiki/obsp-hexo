@@ -9,6 +9,9 @@ tags:
 categories:
   - 日常
 date: 2025-04-21 16:22:03
+references:
+  - '[PRIME](https://wiki.archlinuxcn.org/wiki/PRIME#%E9%85%8D%E7%BD%AE%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8_GPU_%E6%B8%B2%E6%9F%93)'
+  - '[ArchLinux 下 AMD 集显 NVIDIA 独显双显卡方案](https://www.hhhil.com/posts/amd-nvidia-gpu/)'
 ---
 
 # 前言
@@ -79,3 +82,36 @@ GTK_IM_MODULE=fcitx
 问题描述：在使用 X11 窗口系统的时候，安装 N 卡驱动之后，OnlyOffice 的显示比例会变得特别大，参照[这个 Issue](https://github.com/ONLYOFFICE/DesktopEditors/issues/324)。有时候随着 OnlyOffice 的版本更新，这个问题会自行消失，不过我最近还是遇到了。
 
 换用 Wayland 就好了。
+
+
+## 2025-6-9 更新：双显卡配置，Steam 游戏启动选项
+
+先贴我的系统信息，一个英伟达独显，一个 AMD Radeon 集显：
+
+```
+Operating System: EndeavourOS 
+KDE Plasma Version: 6.3.5
+KDE Frameworks Version: 6.14.0
+Qt Version: 6.9.1
+Kernel Version: 6.14.10-arch1-1 (64-bit)
+Graphics Platform: Wayland
+Processors: 16 × AMD Ryzen 7 7735H with Radeon Graphics
+Memory: 38.4 GiB of RAM
+Graphics Processor 1: NVIDIA GeForce RTX 4060 Laptop GPU
+Graphics Processor 2: AMD Radeon 680M
+Manufacturer: ASUSTeK COMPUTER INC.
+Product Name: ASUS TUF Gaming A15 FA507NV_FA507NV
+System Version: 1.0
+```
+
+我在运行 `nvidia-inst` 后又运行了 `paru -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon  lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau` ，然后就可以愉快食用了（如果不装集显的驱动就会两个卡槽都用 N 卡的 OpenGL，显示在系统信息里的会是两个英伟达 GPU）。
+
+为什么突然现在更新呢，因为我把集显的事彻底忘在了脑后，我天真地以为只要假装集显不存在就好了。直到用 Steam 和 Proton 启动 2077 的时候一直报错（如图所示），但是正确安装驱动的情况下应该是不会有这个 OpenGL 的问题的，再加上 ProtonDB  上评级为 Native 和 Platinum 的红弦俱乐部和逆转裁判123在启动时黑屏，我不由得开始怀疑是不是自己的显卡驱动真的有问题。
+
+![cyberpunk2077报错](https://i.111666.best/image/yHlbHLCCrPaB3Jv5yTi1BI.png)
+
+在这个报错之前我完全没怀疑是显卡的问题，试了很多种启动参数都没能玩上游戏，但是这个关键的错误启发了我：2077 可能在尝试使用我的集成显卡……
+
+于是，我在启动参数中强制游戏使用独显：`_NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%`，问题迎刃而解。
+
+最后我就去把集显驱动装上了……就是这样……
