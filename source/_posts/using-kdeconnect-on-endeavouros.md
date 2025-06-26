@@ -5,6 +5,8 @@ tags:
   - android
   - endeavouros
   - kde
+categories:
+  - 日常
 ---
 如果你使用默认设置安装 EndeavourOS，那么在使用 KDE Connect 时就会发现无法寻找到局域网中的其它设备。
 
