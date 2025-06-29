@@ -1,5 +1,5 @@
 ---
-title: 新手技术教程：moto g53刷入Evolution X
+title: moto g53刷入Evolution X
 date: 2025-05-06 17:47:44
 tags:
   - flashing
