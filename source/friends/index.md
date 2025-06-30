@@ -15,3 +15,4 @@ img:
 
 
 {% friends mailer %}
+{% friends ms %}
