@@ -78,6 +78,7 @@ _autodiscover._tcp   SRV 0 1 443 autodiscover.example.org
 | Type  | Name/Host    | Value              |
 | ----- | ------------ | ------------------ |
 | CNAME | autodiscover | eu1.workspace.org. |
+
 这样一来，Outlook 在请求 `https://autodiscover.example.org/autodiscover/autodiscover.xml` 时就会被重定向到 `https://eu1.workspace.org/autodiscover/autodiscover.xml`，不过需要注意的是，你会发现，在 curl 这一链接（需要使用用户名和密码登录）后并不会出现 XML 文本，而是出现这样的页面：
 
 ```html
