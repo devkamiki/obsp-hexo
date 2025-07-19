@@ -1,8 +1,7 @@
 ---
-title: removed-smtp-restriction
+title: 本站注册服务现已开启邮件通知
 date: 2025-07-19 19:07:20
-tags:
-  - 本站注册服务现已开启邮件通知
+tags: 
 categories:
   - 站务公告
 ---

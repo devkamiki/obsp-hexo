@@ -10,7 +10,7 @@ This website serves as an open source projects' intro and tutorial for noobs, th
 本站服务列表 / Service List：
 {% link https://info.obsp.de services desc:true%}
 
-以上服务部分开放注册，请合理利用资源，严禁滥用！
+以上服务开放注册，请合理利用资源，严禁滥用！
 Services above are all open to public for registration. Please keep fair use!
 
 希望你在这里玩得开心！
