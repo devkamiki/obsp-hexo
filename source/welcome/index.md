@@ -7,20 +7,10 @@ title: 欢迎来到 Observer's Space！Welcome to Observer's Space! Observer's S
 本站是一个介绍开源项目及其自建指南的新手向技术型博客，站长是神木友希。
 This website serves as an open source projects' intro and tutorial for noobs, the maintainer of which is Yuki Kamiki.
 
-站长个人主页 / Personal Homepage of maintainer：
-{% link https://kamiki.pages.dev Homepage desc:true%}
+本站服务列表 / Service List：
+{% link https://info.obsp.de services desc:true%}
 
-服务状态监控 / Status：
-{% link https://status.obsp.de/status/1 Uptime-Kuma desc:true %}
-
-本站提供的开源项目自托管实例 / Instances of open source projects hosted on Observer's Space:
-{% link https://q.obsp.de  SearXNG desc:true %}
-{% link https://bin.obsp.de Microbin desc:true %}
-{% link https://vw.obsp.de Vaultwarden desc:true %}
-{% link https://vikunja.obsp.de Vikunja desc:true %}
-{% link https://wallos.obsp.de Wallos desc:true %}
-
-以上服务均开放注册，请合理利用资源，严禁滥用！
+以上服务部分开放注册，请合理利用资源，严禁滥用！
 Services above are all open to public for registration. Please keep fair use!
 
 希望你在这里玩得开心！
