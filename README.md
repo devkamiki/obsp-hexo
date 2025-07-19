@@ -11,4 +11,4 @@ This site would only be possible thanks to the following projects:
 - [hexo-theme-stellar](https://github.com/xaoxuu/hexo-theme-stellar)
 - [LxgwWenkai](https://github.com/lxgw/LxgwWenKai)
 
-License: [MIT](LICENSE) for the codes, and [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for the articles.
+License: [MIT](LICENSE) for the codes, and [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for the articles. 
